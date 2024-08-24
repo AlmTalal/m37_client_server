@@ -22,7 +22,7 @@ services:
       retries: 5
   
   m37_server:
-    image: almtalal/m37:3
+    image: almtalal/m37:v3
     command: sh -c "sleep 20 && bun run start"
     env_file:
       - ./.env
