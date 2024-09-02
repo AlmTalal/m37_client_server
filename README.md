@@ -25,7 +25,7 @@ DB_PORT=3306
 DB_NAME=m37db
 SERVER_PORT=3000
 MYSQL_ROOT_PASSWORD=12345
-NODE_ENV="Pro"
+NODE_ENV="production"
 
 
 CS_CART_API_KEY=ZmFkaUBzaWhheS5jb206NjNaMHo5NDI3U2UxdFY2OTA5SEcyRjMyQ1lTTk1EODg=
@@ -58,7 +58,7 @@ services:
       retries: 5
 
   m37_server:
-    image: almtalal/m37:version to update to
+    image: almtalal/m37:latest
     command: sh -c "sleep 20 && bun run start"
     env_file:
       - ./.env
